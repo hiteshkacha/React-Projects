@@ -60,7 +60,7 @@ const App = () => {
               className="h-10 flex-1 rounded-md border bg-background px-3 text-sm outline-none transition focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
               aria-label="Set count value"
             />
-            <Button onClick={() => setCount(countTo)} className="sm:w-auto">
+            <Button onClick={() => {setCount(countTo), setCountTo(0)}} className="sm:w-auto">
               <Send />
               Set Count
             </Button>
